@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+env/
+.env
+
+# Data
+scheduling_app/agent/appointments.json
+scheduling_app/agent/.env
+scheduling_app/backend/.env
+scheduling_app/frontend/.env
+
+# IDEs
+.vscode/
+.idea/
+
+# Node
+node_modules/
+dist/
+build/
+.next/
+out/
+*.log

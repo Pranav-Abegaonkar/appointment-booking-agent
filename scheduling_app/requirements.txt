@@ -1,0 +1,43 @@
+# VideoSDK AI Agents Core
+videosdk-agents==1.0.4
+videosdk-plugins-rnnoise==1.0.4
+
+# Real-time API and LLM-based TTS/STT Providers
+videosdk-plugins-openai==1.0.4
+videosdk-plugins-google==1.0.4
+videosdk-plugins-aws==1.0.4
+videosdk-plugins-sarvamai==1.0.4
+videosdk-plugins-cartesia==1.0.4
+
+# Speech-to-Text (STT) Plugins
+videosdk-plugins-deepgram==1.0.4
+
+# Voice Activity Detection (VAD) and Turn Detection Plugins
+videosdk-plugins-silero==1.0.4
+videosdk-plugins-turn-detector==1.0.4
+
+# Text-to-Speech (TTS) Plugins
+videosdk-plugins-elevenlabs==1.0.4
+
+# LLM Plugins
+videosdk-plugins-anthropic==1.0.4
+videosdk-plugins-cerebras==1.0.4
+
+# Virtual Avatar Plugins
+videosdk-plugins-simli==1.0.4
+videosdk-plugins-anam==1.0.4
+
+# Real-time Plugins
+videosdk-plugins-xai==1.0.4
+videosdk-plugins-ultravox==1.0.4
+
+# Core Dependencies
+fastapi
+uvicorn
+aiohttp
+python-dotenv>=1.1.1
+requests>=2.31.0
+PyJWT
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
