@@ -16,7 +16,7 @@ from videosdk.agents import (
     EOUConfig,
     InterruptConfig,
     function_tool,
-    # MCPServerHTTP # Commenting as agent mcp is not working
+    MCPServerHTTP
 )
 
 # Plugins
@@ -86,18 +86,17 @@ class VoiceAgent(Agent):
                 current_date=current_date,
                 agent_name="Anushka",
             ),
-            # Commenting as agent mcp is not working
-            # mcp_servers=[
-            #     MCPServerHTTP(
-            #         endpoint_url="https://mcp.zapier.com/api/v1/connect",
-            #         request_headers={
-            #             "Authorization": f"Bearer {os.getenv('ZAPIER_MCP_API_KEY')}"
-            #         },
-            #         session_timeout=60
-            #     )
-            # ]
+            mcp_servers=[
+                MCPServerHTTP(
+                    endpoint_url="https://mcp.zapier.com/api/v1/connect",
+                    request_headers={
+                        "Authorization": f"Bearer {os.getenv('ZAPIER_MCP_API_KEY')}"
+                    },
+                    session_timeout=60
+                )
+            ]
         )
-        logger.info("[INIT] TYHO VoiceAgent ready")
+        logger.info("[INIT] TYHO VoiceAgent ready | mcp_enabled=%s", bool(os.getenv("ZAPIER_MCP_API_KEY")))
 
     async def on_enter(self) -> None:
         logger.info("[SESSION] Agent entered — greeting patient")
