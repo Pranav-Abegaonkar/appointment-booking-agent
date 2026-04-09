@@ -12,6 +12,7 @@ scheduling_app/agent/appointments.json
 scheduling_app/agent/.env
 scheduling_app/backend/.env
 scheduling_app/frontend/.env
+client_secret*.json
 
 # IDEs
 .vscode/
